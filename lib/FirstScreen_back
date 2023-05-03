@@ -1,0 +1,34 @@
+// import 'package:flutter/material.dart';
+// import 'package:belajar_navigasi/SecondScreen.dart';
+// class FirstScreen extends StatelessWidget {
+//   const FirstScreen({super.key});
+
+//   Future<void> _navigateScreen(BuildContext context) async {
+//     final result = await Navigator.push(
+//       context, 
+//       MaterialPageRoute(builder: (context) => SecondScreen()),
+//     );
+
+//     ScaffoldMessenger.of(context)
+//     ..removeCurrentSnackBar()
+//     ..showSnackBar(SnackBar(content:Text('$result')));
+//   }
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(
+//         backgroundColor: Colors.red,
+//         title: Text('Layar Pertama'),
+//       ),
+//       body: Center(
+//         child: ElevatedButton(
+//           child: Text('Menuju Ke Layar Kedua'),
+//           onPressed: (){
+//             _navigateScreen(context);
+//           },
+//           )
+//         ),
+//     );
+//   }
+// }

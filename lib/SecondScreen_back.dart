@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 
 class SecondScreen extends StatelessWidget {
-  final String data;
-  const SecondScreen({super.key, required this.data});
+  const SecondScreen({super.key,});
 
   @override
   Widget build(BuildContext context) {
@@ -12,14 +11,13 @@ class SecondScreen extends StatelessWidget {
         title: Text('Layar Kedua'),
       ),
       body: Center(
-          child: Column(
+        child: Column(
           mainAxisSize: MainAxisSize.min,
-          children:[
-          Text(data),
+          children: [
           ElevatedButton(
           child:Text ('kembali'),
           onPressed: (){
-            Navigator.pop(context);
+            Navigator.pop(context, 'Data dari Layar Kedua');
           }
           )
           ],

@@ -14,11 +14,8 @@ class FirstScreen extends StatelessWidget {
         child: ElevatedButton(
           child: Text('Menuju Ke Layar Kedua'),
           onPressed: (){
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context)=> SecondScreen(),
-              )
-              );              
+            Navigator.pushNamed(context,'/second',
+            arguments:'hello from first screen');
           }
           )
         ),
